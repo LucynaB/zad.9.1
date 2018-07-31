@@ -24,4 +24,14 @@ public class Rectangle extends GeometricShape {
     public void setB(double b) {
         this.b = b;
     }
+
+    @Override
+    public String toString() {
+        return "Prostokąt o długościach boków "+getA()+" i "+getB();
+    }
+
+   @Override
+    public double area(GeometricShape shape) {
+        return getA() * getB();
+    }
 }

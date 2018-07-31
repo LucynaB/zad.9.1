@@ -44,4 +44,9 @@ public class Line2D extends Shape2D {
     public void setY2(double y2) {
         this.y2 = y2;
     }
+
+    @Override
+    public String toString() {
+        return "Odcinek wyznaczony przez współrzędne ["+getX1()+", "+getY1()+"] ["+getX2()+", "+getY2()+"]";
+    }
 }
